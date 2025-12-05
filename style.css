@@ -18,16 +18,26 @@
   --input: hsl(220, 15%, 20%);
   --ring: hsl(180, 100%, 50%);
   --radius: 0.75rem;
-  
+
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, hsl(280, 100%, 60%), hsl(180, 100%, 50%));
-  --gradient-glow: linear-gradient(180deg, transparent 0%, hsla(180, 100%, 50%, 0.1) 100%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(280, 100%, 60%),
+    hsl(180, 100%, 50%)
+  );
+  --gradient-glow: linear-gradient(
+    180deg,
+    transparent 0%,
+    hsla(180, 100%, 50%, 0.1) 100%
+  );
 }
 
 /* ========================================
    Base Styles
    ======================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -38,15 +48,20 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--background);
   color: var(--foreground);
   line-height: 1.6;
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -125,7 +140,7 @@ img {
 }
 
 .logo-text {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -211,12 +226,18 @@ img {
 .grid-pattern {
   position: absolute;
   inset: 0;
-  background-image: 
-    linear-gradient(hsla(180, 100%, 50%, 0.03) 1px, transparent 1px),
+  background-image: linear-gradient(
+      hsla(180, 100%, 50%, 0.03) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, hsla(180, 100%, 50%, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 0%,
+    transparent 70%
+  );
 }
 
 .hero-content {
@@ -491,7 +512,11 @@ img {
 
 .pricing-popular {
   border-color: var(--primary);
-  background: linear-gradient(180deg, hsla(180, 100%, 50%, 0.05) 0%, var(--card) 100%);
+  background: linear-gradient(
+    180deg,
+    hsla(180, 100%, 50%, 0.05) 0%,
+    var(--card) 100%
+  );
 }
 
 .popular-badge {
@@ -535,7 +560,7 @@ img {
 }
 
 .pricing-price .amount {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   background: var(--gradient-primary);
@@ -880,35 +905,62 @@ img {
   transform: translateY(0) translateX(0);
 }
 
-[data-delay="100"] { transition-delay: 0.1s; }
-[data-delay="200"] { transition-delay: 0.2s; }
-[data-delay="300"] { transition-delay: 0.3s; }
-[data-delay="400"] { transition-delay: 0.4s; }
-[data-delay="500"] { transition-delay: 0.5s; }
+[data-delay="100"] {
+  transition-delay: 0.1s;
+}
+[data-delay="200"] {
+  transition-delay: 0.2s;
+}
+[data-delay="300"] {
+  transition-delay: 0.3s;
+}
+[data-delay="400"] {
+  transition-delay: 0.4s;
+}
+[data-delay="500"] {
+  transition-delay: 0.5s;
+}
 
 /* Floating Animation */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-.feature-card:nth-child(1) { animation: float 4s ease-in-out infinite; }
-.feature-card:nth-child(2) { animation: float 4s ease-in-out infinite 0.5s; }
-.feature-card:nth-child(3) { animation: float 4s ease-in-out infinite 1s; }
-.feature-card:nth-child(4) { animation: float 4s ease-in-out infinite 1.5s; }
+.feature-card:nth-child(1) {
+  animation: float 4s ease-in-out infinite;
+}
+.feature-card:nth-child(2) {
+  animation: float 4s ease-in-out infinite 0.5s;
+}
+.feature-card:nth-child(3) {
+  animation: float 4s ease-in-out infinite 1s;
+}
+.feature-card:nth-child(4) {
+  animation: float 4s ease-in-out infinite 1.5s;
+}
 
 /* Glow Effect */
 @keyframes glow {
-  0%, 100% { box-shadow: 0 0 20px hsla(180, 100%, 50%, 0.2); }
-  50% { box-shadow: 0 0 40px hsla(180, 100%, 50%, 0.4); }
+  0%,
+  100% {
+    box-shadow: 0 0 20px hsla(180, 100%, 50%, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px hsla(180, 100%, 50%, 0.4);
+  }
 }
 
 .pricing-popular {
   animation: glow 3s ease-in-out infinite;
 }
 
-
-/* From Uiverse.io by MuhammadHasann */ 
+/* From Uiverse.io by MuhammadHasann */
 .button {
   --black-700: rgb(46, 68, 212);
   --border_radius: 9px;
@@ -954,8 +1006,7 @@ img {
   z-index: 0;
 }
 
-
-.button:hover{
+.button:hover {
   transition: 0.3s ease-in-out;
   background: hsla(180, 100%, 50%, 0.9);
   transform: translateY(-2px);

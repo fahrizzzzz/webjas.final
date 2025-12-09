@@ -1260,7 +1260,7 @@
               </div>
               <div>
                 <h4>Email</h4>
-                <p>hello@jasweb.co</p>
+                <p>botfarry01@gmail.com</p>
               </div>
             </div>
             <div class="contact-card">
@@ -1308,71 +1308,74 @@
             </div>
           </div>
           <div class="contact-form-container" data-animate="slide-right">
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="name">Nama Lengkap</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Masukkan nama Anda"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Masukkan email Anda"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="service">Layanan yang Dibutuhkan</label>
-                <select id="service" name="service" required>
-                  <option value="">Pilih layanan</option>
-                  <option value="umkm">Website UMKM</option>
-                  <option value="landing">Landing Page</option>
-                  <option value="toko">Toko Online</option>
-                  <option value="portfolio">Portofolio(Harga Start 10-100k)</option>
-                  <option value="company">Company Profile</option>
-                  <option value="custom">Custom Development</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Ceritakan kebutuhan website Anda..."
-                  rows="4"
-                  maxlength="500"
-                  required
-                ></textarea>
-                <span class="char-counter" id="char-counter"
-                  >0/500 karakter</span
-                >
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                Kirim Pesan
-              </button>
-            </form>
-          </div>
+  <form class="contact-form" id="contact-form" netlify>
+    
+    <div class="form-group">
+      <label for="name">Nama Lengkap</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Masukkan nama Anda"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Masukkan email Anda"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="service">Layanan yang Dibutuhkan</label>
+      <select id="service" name="service" required>
+        <option value="">Pilih layanan</option>
+        <option value="umkm">Website UMKM</option>
+        <option value="landing">Landing Page</option>
+        <option value="toko">Toko Online</option>
+        <option value="portfolio">Portofolio (Harga Start 10-100k)</option>
+        <option value="company">Company Profile</option>
+        <option value="custom">Custom Development</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Pesan</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Ceritakan kebutuhan website Anda..."
+        rows="4"
+        maxlength="500"
+        required
+      ></textarea>
+      <span class="char-counter" id="char-counter">0/500 karakter</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+      Kirim Pesan
+    </button>
+  </form>
+</div>
         </div>
       </div>
     </section>
@@ -1407,6 +1410,8 @@
         <p class="copyright">© 2024 JASWEB.CO. All rights reserved.</p>
       </div>
     </footer>
+    
+
 
     <script src="script.js"></script>
   </body>
